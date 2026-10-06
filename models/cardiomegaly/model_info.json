@@ -1,0 +1,27 @@
+{
+  "condition": "cardiomegaly",
+  "display_name": "\u2764\ufe0f Cardiomegaly Detection",
+  "model_file": "cardiomegaly_densenet121_intensive_20251006_192404.keras",
+  "architecture": "DenseNet121",
+  "parameters": 7305281,
+  "performance": {
+    "accuracy": 0.63,
+    "precision": 0.6816,
+    "recall": 0.5728
+  },
+  "grade": "Clinical Grade",
+  "input_shape": [
+    224,
+    224,
+    3
+  ],
+  "output_classes": 2,
+  "classes": [
+    "Normal",
+    "Cardiomegaly"
+  ],
+  "gradcam_layer": "conv5_block16_2_conv",
+  "training_date": "2025-10-06",
+  "integrated_date": "2025-10-07 00:53:39",
+  "status": "production_ready"
+}

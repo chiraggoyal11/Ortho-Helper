@@ -1,0 +1,53 @@
+{
+  "model_info": {
+    "name": "DenseNet121_Pneumonia_Intensive",
+    "architecture": "DenseNet121",
+    "dataset": "Pneumonia",
+    "configuration": "Intensive",
+    "timestamp": "20251006_182328",
+    "total_parameters": 7305281
+  },
+  "performance": {
+    "test_accuracy": 0.9575,
+    "test_precision": 0.9735,
+    "test_recall": 0.9388,
+    "training_time_minutes": 9.3,
+    "epochs_trained": "11",
+    "max_epochs": "15",
+    "early_stopping": true
+  },
+  "training_config": {
+    "name": "Intensive",
+    "epochs": 15,
+    "batch_size": 25,
+    "learning_rate": 0.001,
+    "validation_split": 0.2,
+    "patience": 4
+  },
+  "dataset_info": {
+    "name": "Pneumonia",
+    "path": "Dataset/CHEST/Pneumonia_Organized/train",
+    "classes": [
+      "NORMAL",
+      "PNEUMONIA"
+    ],
+    "type": "medical_imaging",
+    "description": "Pneumonia Detection"
+  },
+  "gradcam_optimization": {
+    "optimized_for_gradcam": true,
+    "recommended_layer": "conv5_block16_2_conv",
+    "architecture_benefits": [
+      "Dense connectivity preserves gradients",
+      "Excellent for pneumonia detection visualization",
+      "Superior gradient flow for pneumonia detection",
+      "Clear heatmaps for medical interpretation"
+    ]
+  },
+  "medical_classification": {
+    "performance_level": "Excellent",
+    "clinical_readiness": "Medical grade",
+    "deployment_status": "Ready",
+    "primary_use": "Pneumonia Detection"
+  }
+}

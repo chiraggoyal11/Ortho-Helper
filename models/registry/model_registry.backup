@@ -1,0 +1,1119 @@
+{
+  "version": "3.0_new_folder_models",
+  "created": "2025-10-06T21:34:36.673555",
+  "last_modified": "2025-11-21T02:55:20.530609",
+  "migration_info": {
+    "migration_date": "2025-10-06T21:34:36.673555",
+    "source": "new folder intensive training models",
+    "migration_type": "complete_replacement",
+    "backup_location": "models/migration_backup_20251006_213436"
+  },
+  "models": {
+    "pneumonia_new_intensive": {
+      "model_id": "pneumonia_new_intensive",
+      "model_name": "DenseNet121 Pneumonia Detection (New Intensive Training)",
+      "dataset_type": "pneumonia",
+      "version": "3.0_new_intensive",
+      "architecture": "DenseNet121",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Pneumonia"
+      ],
+      "performance_metrics": {
+        "accuracy": 0.958,
+        "test_accuracy": 0.958
+      },
+      "training_info": {
+        "training_date": "2025-10-06",
+        "source": "new_folder_intensive_training",
+        "performance_level": "Medical Grade"
+      },
+      "file_path": "pneumonia/densenet121_pneumonia_intensive_20251006_182328.h5",
+      "file_size": 33.51,
+      "created_date": "2025-10-06",
+      "description": "Latest intensive training model from new folder for pneumonia detection",
+      "tags": [
+        "DenseNet121",
+        "medical",
+        "new_folder",
+        "intensive_training"
+      ],
+      "is_active": true,
+      "source_location": "new_folder_migration"
+    },
+    "arthritis_new_intensive": {
+      "model_id": "arthritis_new_intensive",
+      "model_name": "DenseNet121 Arthritis Detection (New Intensive Training)",
+      "dataset_type": "arthritis",
+      "version": "3.0_new_intensive",
+      "architecture": "DenseNet121",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Arthritis"
+      ],
+      "performance_metrics": {
+        "accuracy": 0.942,
+        "test_accuracy": 0.942
+      },
+      "training_info": {
+        "training_date": "2025-10-06",
+        "source": "new_folder_intensive_training",
+        "performance_level": "Medical Grade"
+      },
+      "file_path": "arthritis/densenet121_osteoarthritis_intensive_20251006_185456.h5",
+      "file_size": 33.51,
+      "created_date": "2025-10-06",
+      "description": "Latest intensive training model from new folder for arthritis detection",
+      "tags": [
+        "DenseNet121",
+        "medical",
+        "new_folder",
+        "intensive_training"
+      ],
+      "is_active": true,
+      "source_location": "new_folder_migration"
+    },
+    "osteoporosis_new_intensive": {
+      "model_id": "osteoporosis_new_intensive",
+      "model_name": "DenseNet121 Osteoporosis Detection (New Intensive Training)",
+      "dataset_type": "osteoporosis",
+      "version": "3.0_new_intensive",
+      "architecture": "DenseNet121",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Osteoporosis"
+      ],
+      "performance_metrics": {
+        "accuracy": 0.918,
+        "test_accuracy": 0.918
+      },
+      "training_info": {
+        "training_date": "2025-10-06",
+        "source": "new_folder_intensive_training",
+        "performance_level": "Medical Grade"
+      },
+      "file_path": "osteoporosis/densenet121_osteoporosis_intensive_20251006_183913.h5",
+      "file_size": 33.51,
+      "created_date": "2025-10-06",
+      "description": "Latest intensive training model from new folder for osteoporosis detection",
+      "tags": [
+        "DenseNet121",
+        "medical",
+        "new_folder",
+        "intensive_training"
+      ],
+      "is_active": true,
+      "source_location": "new_folder_migration"
+    },
+    "bone_fracture_new_intensive": {
+      "model_id": "bone_fracture_new_intensive",
+      "model_name": "DenseNet121 Bone Fracture Detection (New Intensive Training)",
+      "dataset_type": "bone_fracture",
+      "version": "3.0_new_intensive",
+      "architecture": "DenseNet121",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Bone_Fracture"
+      ],
+      "performance_metrics": {
+        "accuracy": 0.73,
+        "test_accuracy": 0.73
+      },
+      "training_info": {
+        "training_date": "2025-10-06",
+        "source": "new_folder_intensive_training",
+        "performance_level": "Research Grade"
+      },
+      "file_path": "bone_fracture/densenet121_limbabnormalities_intensive_20251006_190347.h5",
+      "file_size": 33.51,
+      "created_date": "2025-10-06",
+      "description": "Latest intensive training model from new folder for bone_fracture detection",
+      "tags": [
+        "DenseNet121",
+        "medical",
+        "new_folder",
+        "intensive_training"
+      ],
+      "is_active": true,
+      "source_location": "new_folder_migration"
+    },
+    "cardiomegaly_new_intensive": {
+      "model_id": "cardiomegaly_new_intensive",
+      "model_name": "DenseNet121 Cardiomegaly Detection (New Intensive Training)",
+      "dataset_type": "cardiomegaly",
+      "version": "3.0_new_intensive",
+      "architecture": "DenseNet121",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Cardiomegaly"
+      ],
+      "performance_metrics": {
+        "accuracy": 0.63,
+        "test_accuracy": 0.63
+      },
+      "training_info": {
+        "training_date": "2025-10-06",
+        "source": "new_folder_intensive_training",
+        "performance_level": "Research Grade"
+      },
+      "file_path": "cardiomegaly/cardiomegaly_densenet121_intensive_20251006_192404.h5",
+      "file_size": 33.51,
+      "created_date": "2025-10-06",
+      "description": "Latest intensive training model from new folder for cardiomegaly detection",
+      "tags": [
+        "DenseNet121",
+        "medical",
+        "new_folder",
+        "intensive_training"
+      ],
+      "is_active": false,
+      "source_location": "new_folder_migration"
+    },
+    "pneumonia_quick_20251006_182328": {
+      "model_id": "pneumonia_quick_20251006_182328",
+      "model_name": "Pneumonia Quick Model",
+      "dataset_type": "pneumonia",
+      "version": "v2.0",
+      "architecture": "DenseNet121",
+      "model_type": "Quick",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Pneumonia"
+      ],
+      "classes": [
+        "Normal",
+        "Pneumonia"
+      ],
+      "parameters": 7305281,
+      "performance_metrics": {
+        "test_accuracy": 0.75,
+        "training_time": "~3 minutes",
+        "inference_speed": "Medium"
+      },
+      "accuracy": 0.75,
+      "training_info": {
+        "timestamp": "20251006_182328",
+        "epochs": 5,
+        "batch_size": 32
+      },
+      "file_path": "pneumonia\\densenet121_pneumonia_intensive_20251006_182328.h5",
+      "file_size": 35136904,
+      "created_date": "2025-10-06T23:45:12.296414",
+      "description": "Quick DenseNet121 model for pneumonia detection",
+      "tags": [
+        "Quick",
+        "DenseNet121",
+        "pneumonia",
+        "binary_classification"
+      ],
+      "threshold": 0.5
+    },
+    "pneumonia_fast_20251007_015119": {
+      "model_id": "pneumonia_fast_20251007_015119",
+      "model_name": "Pneumonia Fast Model",
+      "dataset_type": "pneumonia",
+      "version": "v1.0",
+      "architecture": "MobileNetV2",
+      "model_type": "Fast",
+      "input_shape": [
+        128,
+        128,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Pneumonia"
+      ],
+      "classes": [
+        "Normal",
+        "Pneumonia"
+      ],
+      "parameters": 1464113,
+      "performance_metrics": {
+        "test_accuracy": 0.8719,
+        "training_time": "~1 minute",
+        "inference_speed": "Fast"
+      },
+      "accuracy": 0.8719,
+      "training_info": {
+        "timestamp": "20251007_015119",
+        "epochs": 3,
+        "batch_size": 64
+      },
+      "file_path": "pneumonia\\mobilenet_pneumonia_fast_20251007_015119_final.h5",
+      "file_size": 6868032,
+      "created_date": "2025-10-07T01:53:20.329487",
+      "description": "Fast MobileNetV2 model for pneumonia detection",
+      "tags": [
+        "Fast",
+        "MobileNetV2",
+        "pneumonia",
+        "binary_classification"
+      ],
+      "threshold": 0.5
+    },
+    "pneumonia_intensive_20251006_182328": {
+      "model_id": "pneumonia_intensive_20251006_182328",
+      "model_name": "Pneumonia Intensive Model",
+      "dataset_type": "pneumonia",
+      "version": "v2.0",
+      "architecture": "DenseNet121",
+      "model_type": "Intensive",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Pneumonia"
+      ],
+      "classes": [
+        "Normal",
+        "Pneumonia"
+      ],
+      "parameters": 7337025,
+      "performance_metrics": {
+        "test_accuracy": 0.9575,
+        "training_time": "~15 minutes",
+        "inference_speed": "Medium"
+      },
+      "accuracy": 0.9575,
+      "training_info": {
+        "timestamp": "20251006_182328",
+        "epochs": 5,
+        "batch_size": 32
+      },
+      "file_path": "pneumonia\\densenet121_pneumonia_intensive_20251006_182328.weights.h5",
+      "file_size": 35378952,
+      "created_date": "2025-10-06T23:45:12.432326",
+      "description": "Intensive DenseNet121 model for pneumonia detection",
+      "tags": [
+        "Intensive",
+        "DenseNet121",
+        "pneumonia",
+        "binary_classification"
+      ],
+      "threshold": 0.5
+    },
+    "cardiomegaly_quick_20251006_192404": {
+      "model_id": "cardiomegaly_quick_20251006_192404",
+      "model_name": "Cardiomegaly Quick Model",
+      "dataset_type": "cardiomegaly",
+      "version": "v2.0",
+      "architecture": "DenseNet121",
+      "model_type": "Quick",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Cardiomegaly"
+      ],
+      "classes": [
+        "Normal",
+        "Cardiomegaly"
+      ],
+      "parameters": 7305281,
+      "performance_metrics": {
+        "test_accuracy": 0.75,
+        "training_time": "~3 minutes",
+        "inference_speed": "Medium"
+      },
+      "accuracy": 0.75,
+      "training_info": {
+        "timestamp": "20251006_192404",
+        "epochs": 5,
+        "batch_size": 32
+      },
+      "file_path": "cardiomegaly\\cardiomegaly_densenet121_intensive_20251006_192404.h5",
+      "file_size": 35136904,
+      "created_date": "2025-10-06T23:45:05.545163",
+      "description": "Quick DenseNet121 model for cardiomegaly detection",
+      "tags": [
+        "Quick",
+        "DenseNet121",
+        "cardiomegaly",
+        "binary_classification"
+      ],
+      "threshold": 0.5,
+      "is_active": false
+    },
+    "cardiomegaly_fast_20251007_013114": {
+      "model_id": "cardiomegaly_fast_20251007_013114",
+      "model_name": "Cardiomegaly Fast Model",
+      "dataset_type": "cardiomegaly",
+      "version": "v1.0",
+      "architecture": "MobileNetV2",
+      "model_type": "Fast",
+      "input_shape": [
+        128,
+        128,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Cardiomegaly"
+      ],
+      "classes": [
+        "Normal",
+        "Cardiomegaly"
+      ],
+      "parameters": 1464113,
+      "performance_metrics": {
+        "test_accuracy": 0.6562,
+        "training_time": "~1 minute",
+        "inference_speed": "Fast"
+      },
+      "accuracy": 0.6562,
+      "training_info": {
+        "timestamp": "20251007_013114",
+        "epochs": 3,
+        "batch_size": 64
+      },
+      "file_path": "cardiomegaly\\mobilenet_cardiomegaly_fast_20251007_013114_final.h5",
+      "file_size": 6868032,
+      "created_date": "2025-10-07T01:32:16.568541",
+      "description": "Fast MobileNetV2 model for cardiomegaly detection",
+      "tags": [
+        "Fast",
+        "MobileNetV2",
+        "cardiomegaly",
+        "binary_classification"
+      ],
+      "threshold": 0.5,
+      "is_active": false
+    },
+    "cardiomegaly_fast_20251007_015119": {
+      "model_id": "cardiomegaly_fast_20251007_015119",
+      "model_name": "Cardiomegaly Fast Model",
+      "dataset_type": "cardiomegaly",
+      "version": "v1.0",
+      "architecture": "MobileNetV2",
+      "model_type": "Fast",
+      "input_shape": [
+        128,
+        128,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Cardiomegaly"
+      ],
+      "classes": [
+        "Normal",
+        "Cardiomegaly"
+      ],
+      "parameters": 1464113,
+      "performance_metrics": {
+        "test_accuracy": 0.6562,
+        "training_time": "~1 minute",
+        "inference_speed": "Fast"
+      },
+      "accuracy": 0.6562,
+      "training_info": {
+        "timestamp": "20251007_015119",
+        "epochs": 3,
+        "batch_size": 64
+      },
+      "file_path": "cardiomegaly\\mobilenet_cardiomegaly_fast_20251007_015119_final.h5",
+      "file_size": 6868024,
+      "created_date": "2025-10-07T01:53:55.318817",
+      "description": "Fast MobileNetV2 model for cardiomegaly detection",
+      "tags": [
+        "Fast",
+        "MobileNetV2",
+        "cardiomegaly",
+        "binary_classification"
+      ],
+      "threshold": 0.5,
+      "is_active": false
+    },
+    "cardiomegaly_intensive_20251006_192404": {
+      "model_id": "cardiomegaly_intensive_20251006_192404",
+      "model_name": "Cardiomegaly Intensive Model",
+      "dataset_type": "cardiomegaly",
+      "version": "v2.0",
+      "architecture": "DenseNet121",
+      "model_type": "Intensive",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Cardiomegaly"
+      ],
+      "classes": [
+        "Normal",
+        "Cardiomegaly"
+      ],
+      "parameters": 7337025,
+      "performance_metrics": {
+        "test_accuracy": 0.63,
+        "training_time": "~15 minutes",
+        "inference_speed": "Medium"
+      },
+      "accuracy": 0.63,
+      "training_info": {
+        "timestamp": "20251006_192404",
+        "epochs": 5,
+        "batch_size": 32
+      },
+      "file_path": "cardiomegaly\\cardiomegaly_densenet121_intensive_20251006_192404.weights.h5",
+      "file_size": 35378952,
+      "created_date": "2025-10-06T23:45:05.679349",
+      "description": "Intensive DenseNet121 model for cardiomegaly detection",
+      "tags": [
+        "Intensive",
+        "DenseNet121",
+        "cardiomegaly",
+        "binary_classification"
+      ],
+      "threshold": 0.5,
+      "is_active": false
+    },
+    "cardiomegaly_quick_20251007_011129": {
+      "model_id": "cardiomegaly_quick_20251007_011129",
+      "model_name": "Cardiomegaly Quick Model",
+      "dataset_type": "cardiomegaly",
+      "version": "v1.5",
+      "architecture": "DenseNet121",
+      "model_type": "Quick",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Cardiomegaly"
+      ],
+      "classes": [
+        "Normal",
+        "Cardiomegaly"
+      ],
+      "parameters": 7337025,
+      "performance_metrics": {
+        "test_accuracy": 0.75,
+        "training_time": "~3 minutes",
+        "inference_speed": "Medium"
+      },
+      "accuracy": 0.75,
+      "training_info": {
+        "timestamp": "20251007_011129",
+        "epochs": 5,
+        "batch_size": 32
+      },
+      "file_path": "cardiomegaly\\densenet121_cardiomegaly_quick5_20251007_011129_best.h5",
+      "file_size": 37734976,
+      "created_date": "2025-10-07T01:14:51.465302",
+      "description": "Quick DenseNet121 model for cardiomegaly detection",
+      "tags": [
+        "Quick",
+        "DenseNet121",
+        "cardiomegaly",
+        "binary_classification"
+      ],
+      "threshold": 0.5,
+      "is_active": false
+    },
+    "cardiomegaly_quick_20251007_011828": {
+      "model_id": "cardiomegaly_quick_20251007_011828",
+      "model_name": "Cardiomegaly Quick Model",
+      "dataset_type": "cardiomegaly",
+      "version": "v1.5",
+      "architecture": "DenseNet121",
+      "model_type": "Quick",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Cardiomegaly"
+      ],
+      "classes": [
+        "Normal",
+        "Cardiomegaly"
+      ],
+      "parameters": 7337025,
+      "performance_metrics": {
+        "test_accuracy": 0.75,
+        "training_time": "~3 minutes",
+        "inference_speed": "Medium"
+      },
+      "accuracy": 0.75,
+      "training_info": {
+        "timestamp": "20251007_011828",
+        "epochs": 5,
+        "batch_size": 32
+      },
+      "file_path": "cardiomegaly\\densenet121_cardiomegaly_quick5_20251007_011828_best.h5",
+      "file_size": 37734976,
+      "created_date": "2025-10-07T01:21:05.916976",
+      "description": "Quick DenseNet121 model for cardiomegaly detection",
+      "tags": [
+        "Quick",
+        "DenseNet121",
+        "cardiomegaly",
+        "binary_classification"
+      ],
+      "threshold": 0.5,
+      "is_active": false
+    },
+    "arthritis_quick_20251006_185456": {
+      "model_id": "arthritis_quick_20251006_185456",
+      "model_name": "Arthritis Quick Model",
+      "dataset_type": "arthritis",
+      "version": "v2.0",
+      "architecture": "DenseNet121",
+      "model_type": "Quick",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Osteoarthritis"
+      ],
+      "classes": [
+        "Normal",
+        "Osteoarthritis"
+      ],
+      "parameters": 7305281,
+      "performance_metrics": {
+        "test_accuracy": 0.75,
+        "training_time": "~3 minutes",
+        "inference_speed": "Medium"
+      },
+      "accuracy": 0.75,
+      "training_info": {
+        "timestamp": "20251006_185456",
+        "epochs": 5,
+        "batch_size": 32
+      },
+      "file_path": "arthritis\\densenet121_osteoarthritis_intensive_20251006_185456.h5",
+      "file_size": 35136904,
+      "created_date": "2025-10-06T23:45:02.214034",
+      "description": "Quick DenseNet121 model for arthritis detection",
+      "tags": [
+        "Quick",
+        "DenseNet121",
+        "arthritis",
+        "binary_classification"
+      ],
+      "threshold": 0.5
+    },
+    "arthritis_fast_20251007_015119": {
+      "model_id": "arthritis_fast_20251007_015119",
+      "model_name": "Arthritis Fast Model",
+      "dataset_type": "arthritis",
+      "version": "v1.0",
+      "architecture": "MobileNetV2",
+      "model_type": "Fast",
+      "input_shape": [
+        128,
+        128,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Osteoarthritis"
+      ],
+      "classes": [
+        "Normal",
+        "Osteoarthritis"
+      ],
+      "parameters": 1464113,
+      "performance_metrics": {
+        "test_accuracy": 0.9703,
+        "training_time": "~1 minute",
+        "inference_speed": "Fast"
+      },
+      "accuracy": 0.9703,
+      "training_info": {
+        "timestamp": "20251007_015119",
+        "epochs": 3,
+        "batch_size": 64
+      },
+      "file_path": "arthritis\\mobilenet_arthritis_fast_20251007_015119_final.h5",
+      "file_size": 6868024,
+      "created_date": "2025-10-07T01:55:15.651938",
+      "description": "Fast MobileNetV2 model for arthritis detection",
+      "tags": [
+        "Fast",
+        "MobileNetV2",
+        "arthritis",
+        "binary_classification"
+      ],
+      "threshold": 0.5
+    },
+    "arthritis_intensive_20251006_185456": {
+      "model_id": "arthritis_intensive_20251006_185456",
+      "model_name": "Arthritis Intensive Model",
+      "dataset_type": "arthritis",
+      "version": "v2.0",
+      "architecture": "DenseNet121",
+      "model_type": "Intensive",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Osteoarthritis"
+      ],
+      "classes": [
+        "Normal",
+        "Osteoarthritis"
+      ],
+      "parameters": 7337025,
+      "performance_metrics": {
+        "test_accuracy": 0.9425,
+        "training_time": "~15 minutes",
+        "inference_speed": "Medium"
+      },
+      "accuracy": 0.9425,
+      "training_info": {
+        "timestamp": "20251006_185456",
+        "epochs": 5,
+        "batch_size": 32
+      },
+      "file_path": "arthritis\\densenet121_osteoarthritis_intensive_20251006_185456.weights.h5",
+      "file_size": 35378952,
+      "created_date": "2025-10-06T23:45:02.349625",
+      "description": "Intensive DenseNet121 model for arthritis detection",
+      "tags": [
+        "Intensive",
+        "DenseNet121",
+        "arthritis",
+        "binary_classification"
+      ],
+      "threshold": 0.5
+    },
+    "osteoporosis_quick_20251006_183913": {
+      "model_id": "osteoporosis_quick_20251006_183913",
+      "model_name": "Osteoporosis Quick Model",
+      "dataset_type": "osteoporosis",
+      "version": "v2.0",
+      "architecture": "DenseNet121",
+      "model_type": "Quick",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Osteoporosis"
+      ],
+      "classes": [
+        "Normal",
+        "Osteoporosis"
+      ],
+      "parameters": 7305281,
+      "performance_metrics": {
+        "test_accuracy": 0.75,
+        "training_time": "~3 minutes",
+        "inference_speed": "Medium"
+      },
+      "accuracy": 0.75,
+      "training_info": {
+        "timestamp": "20251006_183913",
+        "epochs": 5,
+        "batch_size": 32
+      },
+      "file_path": "osteoporosis\\densenet121_osteoporosis_intensive_20251006_183913.h5",
+      "file_size": 35136904,
+      "created_date": "2025-10-06T23:45:12.054696",
+      "description": "Quick DenseNet121 model for osteoporosis detection",
+      "tags": [
+        "Quick",
+        "DenseNet121",
+        "osteoporosis",
+        "binary_classification"
+      ],
+      "threshold": 0.5
+    },
+    "osteoporosis_fast_20251007_015119": {
+      "model_id": "osteoporosis_fast_20251007_015119",
+      "model_name": "Osteoporosis Fast Model",
+      "dataset_type": "osteoporosis",
+      "version": "v1.0",
+      "architecture": "MobileNetV2",
+      "model_type": "Fast",
+      "input_shape": [
+        128,
+        128,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Osteoporosis"
+      ],
+      "classes": [
+        "Normal",
+        "Osteoporosis"
+      ],
+      "parameters": 1464113,
+      "performance_metrics": {
+        "test_accuracy": 0.869,
+        "training_time": "~1 minute",
+        "inference_speed": "Fast"
+      },
+      "accuracy": 0.869,
+      "training_info": {
+        "timestamp": "20251007_015119",
+        "epochs": 3,
+        "batch_size": 64
+      },
+      "file_path": "osteoporosis\\mobilenet_osteoporosis_fast_20251007_015119_final.h5",
+      "file_size": 6868024,
+      "created_date": "2025-10-07T01:56:29.194752",
+      "description": "Fast MobileNetV2 model for osteoporosis detection",
+      "tags": [
+        "Fast",
+        "MobileNetV2",
+        "osteoporosis",
+        "binary_classification"
+      ],
+      "threshold": 0.5
+    },
+    "osteoporosis_intensive_20251006_183913": {
+      "model_id": "osteoporosis_intensive_20251006_183913",
+      "model_name": "Osteoporosis Intensive Model",
+      "dataset_type": "osteoporosis",
+      "version": "v2.0",
+      "architecture": "DenseNet121",
+      "model_type": "Intensive",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Osteoporosis"
+      ],
+      "classes": [
+        "Normal",
+        "Osteoporosis"
+      ],
+      "parameters": 7337025,
+      "performance_metrics": {
+        "test_accuracy": 0.9177,
+        "training_time": "~15 minutes",
+        "inference_speed": "Medium"
+      },
+      "accuracy": 0.9177,
+      "training_info": {
+        "timestamp": "20251006_183913",
+        "epochs": 5,
+        "batch_size": 32
+      },
+      "file_path": "osteoporosis\\densenet121_osteoporosis_intensive_20251006_183913.weights.h5",
+      "file_size": 35378952,
+      "created_date": "2025-10-06T23:45:12.217329",
+      "description": "Intensive DenseNet121 model for osteoporosis detection",
+      "tags": [
+        "Intensive",
+        "DenseNet121",
+        "osteoporosis",
+        "binary_classification"
+      ],
+      "threshold": 0.5
+    },
+    "bone_fracture_quick_20251006_190347": {
+      "model_id": "bone_fracture_quick_20251006_190347",
+      "model_name": "Bone_Fracture Quick Model",
+      "dataset_type": "bone_fracture",
+      "version": "v2.0",
+      "architecture": "DenseNet121",
+      "model_type": "Quick",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Negative",
+        "Positive"
+      ],
+      "classes": [
+        "Negative",
+        "Positive"
+      ],
+      "parameters": 7305281,
+      "performance_metrics": {
+        "test_accuracy": 0.75,
+        "training_time": "~3 minutes",
+        "inference_speed": "Medium"
+      },
+      "accuracy": 0.75,
+      "training_info": {
+        "timestamp": "20251006_190347",
+        "epochs": 5,
+        "batch_size": 32
+      },
+      "file_path": "bone_fracture\\densenet121_limbabnormalities_intensive_20251006_190347.h5",
+      "file_size": 35136904,
+      "created_date": "2025-10-06T23:45:05.255674",
+      "description": "Quick DenseNet121 model for bone_fracture detection",
+      "tags": [
+        "Quick",
+        "DenseNet121",
+        "bone_fracture",
+        "binary_classification"
+      ],
+      "threshold": 0.5,
+      "is_active": false
+    },
+    "bone_fracture_fast_20251007_015119": {
+      "model_id": "bone_fracture_fast_20251007_015119",
+      "model_name": "Bone_Fracture Fast Model",
+      "dataset_type": "bone_fracture",
+      "version": "v1.0",
+      "architecture": "MobileNetV2",
+      "model_type": "Fast",
+      "input_shape": [
+        128,
+        128,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Negative",
+        "Positive"
+      ],
+      "classes": [
+        "Negative",
+        "Positive"
+      ],
+      "parameters": 1464113,
+      "performance_metrics": {
+        "test_accuracy": 0.7704,
+        "training_time": "~1 minute",
+        "inference_speed": "Fast"
+      },
+      "accuracy": 0.7704,
+      "training_info": {
+        "timestamp": "20251007_015119",
+        "epochs": 3,
+        "batch_size": 64
+      },
+      "file_path": "bone_fracture\\mobilenet_bone_fracture_fast_20251007_015119_final.h5",
+      "file_size": 6868024,
+      "created_date": "2025-10-07T01:57:10.819571",
+      "description": "Fast MobileNetV2 model for bone_fracture detection",
+      "tags": [
+        "Fast",
+        "MobileNetV2",
+        "bone_fracture",
+        "binary_classification"
+      ],
+      "threshold": 0.5,
+      "is_active": false
+    },
+    "bone_fracture_intensive_20251006_190347": {
+      "model_id": "bone_fracture_intensive_20251006_190347",
+      "model_name": "Bone_Fracture Intensive Model",
+      "dataset_type": "bone_fracture",
+      "version": "v2.0",
+      "architecture": "DenseNet121",
+      "model_type": "Intensive",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Negative",
+        "Positive"
+      ],
+      "classes": [
+        "Negative",
+        "Positive"
+      ],
+      "parameters": 7337025,
+      "performance_metrics": {
+        "test_accuracy": 0.73,
+        "training_time": "~15 minutes",
+        "inference_speed": "Medium"
+      },
+      "accuracy": 0.73,
+      "training_info": {
+        "timestamp": "20251006_190347",
+        "epochs": 5,
+        "batch_size": 32
+      },
+      "file_path": "bone_fracture\\densenet121_limbabnormalities_intensive_20251006_190347.weights.h5",
+      "file_size": 35378952,
+      "created_date": "2025-10-06T23:45:05.438241",
+      "description": "Intensive DenseNet121 model for bone_fracture detection",
+      "tags": [
+        "Intensive",
+        "DenseNet121",
+        "bone_fracture",
+        "binary_classification"
+      ],
+      "threshold": 0.5,
+      "is_active": false
+    },
+    "bone_fracture_densenet201_20251117_141521": {
+      "model_id": "bone_fracture_densenet201_20251117_141521",
+      "model_name": "DenseNet201 Bone Fracture Detection (Advanced Training)",
+      "dataset_type": "bone_fracture",
+      "version": "4.0_advanced",
+      "architecture": "DenseNet201",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Bone_Fracture"
+      ],
+      "performance_metrics": {
+        "accuracy": 0.6179,
+        "precision": 0.5601,
+        "recall": 0.5047,
+        "f1_score": 0.4041,
+        "fracture_precision": 0,
+        "fracture_recall": 0
+      },
+      "training_info": {
+        "training_date": "2025-11-17T14:49:17.105215",
+        "architecture": "DenseNet201",
+        "epochs": 50,
+        "batch_size": 16,
+        "learning_rate": 0.0008,
+        "performance_level": "Research Grade"
+      },
+      "file_path": "bone_fracture/densenet201_bone_fracture_advanced_20251117_144916.h5",
+      "file_size": 161.18,
+      "created_date": "2025-11-17",
+      "description": "Advanced bone fracture detection model with 61.8% accuracy using DenseNet201",
+      "tags": [
+        "DenseNet201",
+        "medical",
+        "advanced_training",
+        "bone_fracture"
+      ],
+      "is_active": false,
+      "source_location": "advanced_training"
+    },
+    "cardiomegaly_densenet121_new": {
+      "model_id": "cardiomegaly_densenet121_new",
+      "model_name": "DenseNet121 Cardiomegaly Detection (New Advanced Training)",
+      "dataset_type": "cardiomegaly",
+      "version": "4.0_densenet121_new",
+      "architecture": "DenseNet121",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Cardiomegaly"
+      ],
+      "performance_metrics": {
+        "accuracy": 0.8178,
+        "test_accuracy": 0.8178,
+        "precision": 0.8178,
+        "recall": 0.8178,
+        "f1_score": 0.8178,
+        "loss": 1.7888
+      },
+      "training_info": {
+        "training_date": "2025-11-21",
+        "source": "advanced_densenet121_training",
+        "performance_level": "Standard"
+      },
+      "file_path": "cardiomegaly/densenet121_cardiomegaly_new_20251121_025520.h5",
+      "file_size": 101.51,
+      "created_date": "2025-11-21",
+      "description": "Advanced DenseNet121 model for cardiomegaly detection with >90% target accuracy",
+      "tags": [
+        "DenseNet121",
+        "medical",
+        "cardiomegaly",
+        "advanced_training"
+      ],
+      "is_active": true,
+      "source_location": "new_advanced_training",
+      "model_type": "Advanced"
+    }
+  },
+  "active_models": {
+    "pneumonia": "pneumonia_new_intensive",
+    "arthritis": "arthritis_new_intensive",
+    "osteoporosis": "osteoporosis_new_intensive",
+    "bone_fracture": "bone_fracture_new_intensive",
+    "cardiomegaly": "cardiomegaly_new_intensive",
+    "chest_conditions": null,
+    "knee_conditions": null
+  }
+}

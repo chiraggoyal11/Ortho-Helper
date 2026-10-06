@@ -1,0 +1,40 @@
+{
+    "model": {
+        "confidence_threshold": 0.7,
+        "batch_processing": false,
+        "gradcam_intensity": 0.4,
+        "auto_preprocessing": true,
+        "enable_gpu": false,
+        "cache_models": true
+    },
+    "reports": {
+        "include_metadata": true,
+        "include_preprocessing_info": false,
+        "include_gradcam": true,
+        "default_format": "PDF",
+        "auto_download": false,
+        "compress_reports": true
+    },
+    "system": {
+        "max_image_size_mb": 10,
+        "dark_mode": false,
+        "show_debug_info": false,
+        "compact_layout": false
+    },
+    "privacy": {
+        "auto_delete_images": true,
+        "anonymous_feedback": true,
+        "usage_analytics": false
+    },
+    "session": {
+        "timeout": "30 minutes",
+        "auto_save_settings": true,
+        "remember_preferences": true
+    },
+    "metadata": {
+        "created_date": "2025-10-06T18:59:11.105876",
+        "last_modified": "2025-10-06T18:59:11.119877",
+        "version": "1.0",
+        "user_role": null
+    }
+}

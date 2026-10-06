@@ -1,0 +1,15 @@
+streamlit
+tensorflow
+tf-keras
+numpy
+pandas
+Pillow
+opencv-python-headless
+matplotlib
+seaborn
+plotly
+scikit-learn
+reportlab
+python-dotenv
+requests
+h5py

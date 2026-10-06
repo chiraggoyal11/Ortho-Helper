@@ -1,0 +1,16 @@
+{
+  "model_name": "DenseNet121_bone_fracture_fast",
+  "architecture": "DenseNet121",
+  "input_shape": [
+    160,
+    160,
+    3
+  ],
+  "training_time": "20251121_030149",
+  "final_accuracy": 0.7149999737739563,
+  "final_loss": 0.631781816482544,
+  "epochs_trained": 15,
+  "total_parameters": 7698242,
+  "training_samples": 1000,
+  "validation_samples": 200
+}

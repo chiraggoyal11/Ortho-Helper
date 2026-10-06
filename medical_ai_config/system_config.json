@@ -1,0 +1,35 @@
+{
+    "system": {
+        "version": "2.0.0",
+        "installation_date": "2025-10-06T19:16:43.112988",
+        "features_enabled": {
+            "advanced_preprocessing": true,
+            "analytics_dashboard": true,
+            "model_management": true,
+            "experimental_features": true,
+            "configuration_persistence": true
+        }
+    },
+    "model": {
+        "confidence_threshold": 0.5,
+        "batch_processing": false,
+        "gradcam_intensity": 0.4,
+        "auto_preprocessing": true,
+        "enable_gpu": false,
+        "cache_models": true
+    },
+    "reports": {
+        "include_metadata": true,
+        "include_preprocessing_info": true,
+        "include_gradcam": true,
+        "default_format": "PDF",
+        "auto_download": false,
+        "compress_reports": true
+    },
+    "advanced": {
+        "preprocessing_presets": {},
+        "custom_models": {},
+        "experimental_features": true,
+        "analytics_enabled": true
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "condition": "bone_fracture",
+  "display_name": "\ud83d\udc80 Bone Fracture Detection",
+  "model_file": "densenet121_limbabnormalities_intensive_20251006_190347.keras",
+  "architecture": "DenseNet121",
+  "parameters": 7305281,
+  "performance": {
+    "accuracy": 0.73,
+    "precision": 0.6966,
+    "recall": 0.815
+  },
+  "grade": "Research Grade",
+  "input_shape": [
+    224,
+    224,
+    3
+  ],
+  "output_classes": 2,
+  "classes": [
+    "Normal",
+    "Bone Fracture"
+  ],
+  "gradcam_layer": "conv5_block16_2_conv",
+  "training_date": "2025-10-06",
+  "integrated_date": "2025-10-07 00:54:26",
+  "status": "production_ready"
+}

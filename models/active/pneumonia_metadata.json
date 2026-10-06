@@ -1,0 +1,38 @@
+{
+  "model_id": "pneumonia_new_intensive",
+  "model_name": "DenseNet121 Pneumonia Detection (New Intensive Training)",
+  "dataset_type": "pneumonia",
+  "version": "3.0_new_intensive",
+  "architecture": "DenseNet121",
+  "input_shape": [
+    224,
+    224,
+    3
+  ],
+  "num_classes": 2,
+  "class_names": [
+    "Normal",
+    "Pneumonia"
+  ],
+  "performance_metrics": {
+    "accuracy": 0.958,
+    "test_accuracy": 0.958
+  },
+  "training_info": {
+    "training_date": "2025-10-06",
+    "source": "new_folder_intensive_training",
+    "performance_level": "Medical Grade"
+  },
+  "file_path": "pneumonia/densenet121_pneumonia_intensive_20251006_182328.h5",
+  "file_size": 33.51,
+  "created_date": "2025-10-06",
+  "description": "Latest intensive training model from new folder for pneumonia detection",
+  "tags": [
+    "DenseNet121",
+    "medical",
+    "new_folder",
+    "intensive_training"
+  ],
+  "is_active": true,
+  "source_location": "new_folder_migration"
+}

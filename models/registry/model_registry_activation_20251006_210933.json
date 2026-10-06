@@ -1,0 +1,816 @@
+{
+  "version": "2.3",
+  "created": "2025-10-06T20:43:56.975987",
+  "last_modified": "2025-10-06T21:08:57.731245",
+  "models": {
+    "bone_fracture_v1": {
+      "model_id": "bone_fracture_v1",
+      "model_name": "DenseNet121 Bone Fracture Detection",
+      "dataset_type": "bone_fracture",
+      "version": "1.0",
+      "architecture": "DenseNet121",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Fracture"
+      ],
+      "classes": [
+        "Normal",
+        "Fracture"
+      ],
+      "performance_metrics": {
+        "accuracy": 0.73,
+        "test_accuracy": 0.73
+      },
+      "accuracy": 0.73,
+      "training_info": {
+        "training_date": "2025-10-06",
+        "dataset": "ARM/MURA_Organized",
+        "performance_level": "Research Grade",
+        "clinical_readiness": "Research"
+      },
+      "file_path": "bone_fracture_model.h5",
+      "file_size": 33.51,
+      "file_hash": "",
+      "created_date": "2025-10-06",
+      "description": "DenseNet121 model for bone fracture detection with 73.0% accuracy",
+      "tags": [
+        "DenseNet121",
+        "medical",
+        "research_grade",
+        "bone_fracture"
+      ],
+      "gradcam_layer": "conv5_block16_2_conv",
+      "is_active": true
+    },
+    "pneumonia_v1": {
+      "model_id": "pneumonia_v1",
+      "model_name": "DenseNet121 Pneumonia Detection",
+      "dataset_type": "pneumonia",
+      "version": "1.0",
+      "architecture": "DenseNet121",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Pneumonia"
+      ],
+      "classes": [
+        "Normal",
+        "Pneumonia"
+      ],
+      "performance_metrics": {
+        "accuracy": 0.9575,
+        "test_accuracy": 0.9575
+      },
+      "accuracy": 0.9575,
+      "training_info": {
+        "training_date": "2025-10-06",
+        "dataset": "CHEST/Pneumonia_Organized",
+        "performance_level": "Medical Grade",
+        "clinical_readiness": "Ready for Clinical Use"
+      },
+      "file_path": "pneumonia_binary_model.h5",
+      "file_size": 33.51,
+      "file_hash": "",
+      "created_date": "2025-10-06",
+      "description": "DenseNet121 model for pneumonia detection with 95.8% accuracy",
+      "tags": [
+        "DenseNet121",
+        "medical",
+        "medical_grade",
+        "pneumonia"
+      ],
+      "gradcam_layer": "conv5_block16_2_conv",
+      "is_active": true
+    },
+    "cardiomegaly_v1": {
+      "model_id": "cardiomegaly_v1",
+      "model_name": "DenseNet121 Cardiomegaly Detection",
+      "dataset_type": "cardiomegaly",
+      "version": "1.0",
+      "architecture": "DenseNet121",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Cardiomegaly"
+      ],
+      "classes": [
+        "Normal",
+        "Cardiomegaly"
+      ],
+      "performance_metrics": {
+        "accuracy": 0.63,
+        "test_accuracy": 0.63
+      },
+      "accuracy": 0.63,
+      "training_info": {
+        "training_date": "2025-10-06",
+        "dataset": "CHEST/cardiomelgy",
+        "performance_level": "Clinical Assistant",
+        "clinical_readiness": "Research and Development"
+      },
+      "file_path": "cardiomegaly_binary_model.h5",
+      "file_size": 33.51,
+      "file_hash": "",
+      "created_date": "2025-10-06",
+      "description": "DenseNet121 model for cardiomegaly detection with 63.0% accuracy",
+      "tags": [
+        "DenseNet121",
+        "medical",
+        "clinical_assistant",
+        "cardiomegaly"
+      ],
+      "gradcam_layer": "conv5_block16_2_conv",
+      "is_active": true
+    },
+    "arthritis_v1": {
+      "model_id": "arthritis_v1",
+      "model_name": "DenseNet121 Arthritis Detection",
+      "dataset_type": "arthritis",
+      "version": "1.0",
+      "architecture": "DenseNet121",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Arthritis"
+      ],
+      "classes": [
+        "Normal",
+        "Arthritis"
+      ],
+      "performance_metrics": {
+        "accuracy": 0.9425,
+        "test_accuracy": 0.9425
+      },
+      "accuracy": 0.9425,
+      "training_info": {
+        "training_date": "2025-10-06",
+        "dataset": "KNEE/Osteoarthritis",
+        "performance_level": "Medical Grade",
+        "clinical_readiness": "Ready for Clinical Use"
+      },
+      "file_path": "arthritis_binary_model.h5",
+      "file_size": 33.51,
+      "file_hash": "",
+      "created_date": "2025-10-06",
+      "description": "DenseNet121 model for arthritis detection with 94.2% accuracy",
+      "tags": [
+        "DenseNet121",
+        "medical",
+        "medical_grade",
+        "arthritis"
+      ],
+      "gradcam_layer": "conv5_block16_2_conv",
+      "is_active": true
+    },
+    "osteoporosis_v1": {
+      "model_id": "osteoporosis_v1",
+      "model_name": "DenseNet121 Osteoporosis Detection",
+      "dataset_type": "osteoporosis",
+      "version": "1.0",
+      "architecture": "DenseNet121",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Osteoporosis"
+      ],
+      "classes": [
+        "Normal",
+        "Osteoporosis"
+      ],
+      "performance_metrics": {
+        "accuracy": 0.9177,
+        "test_accuracy": 0.9177
+      },
+      "accuracy": 0.9177,
+      "training_info": {
+        "training_date": "2025-10-06",
+        "dataset": "KNEE/Osteoporosis",
+        "performance_level": "Medical Grade",
+        "clinical_readiness": "Ready for Clinical Use"
+      },
+      "file_path": "osteoporosis_binary_model.h5",
+      "file_size": 33.51,
+      "file_hash": "",
+      "created_date": "2025-10-06",
+      "description": "DenseNet121 model for osteoporosis detection with 91.8% accuracy",
+      "tags": [
+        "DenseNet121",
+        "medical",
+        "medical_grade",
+        "osteoporosis"
+      ],
+      "gradcam_layer": "conv5_block16_2_conv",
+      "is_active": true
+    },
+    "pneumonia_v2": {
+      "model_id": "pneumonia_v2",
+      "model_name": "DenseNet121 Pneumonia Detection (Intensive v2)",
+      "dataset_type": "pneumonia",
+      "version": "2.0",
+      "architecture": "DenseNet121",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "NORMAL",
+        "PNEUMONIA"
+      ],
+      "classes": [
+        "NORMAL",
+        "PNEUMONIA"
+      ],
+      "performance_metrics": {
+        "accuracy": 0.9575,
+        "test_accuracy": 0.9575,
+        "precision": 0.9735,
+        "recall": 0.9388
+      },
+      "accuracy": 0.9575,
+      "training_info": {
+        "training_date": "2025-10-06",
+        "dataset": "Dataset/CHEST/Pneumonia_Organized/train",
+        "performance_level": "Medical Grade",
+        "clinical_readiness": "Ready for Clinical Use",
+        "training_time_minutes": 9.3,
+        "epochs_trained": "11"
+      },
+      "file_path": "pneumonia_densenet121_intensive_v2.h5",
+      "file_size": 0.45,
+      "file_hash": "cb1b3e89fcfa6646",
+      "created_date": "2025-10-06",
+      "description": "Latest intensive training DenseNet121 model for pneumonia detection with 95.8% accuracy",
+      "tags": [
+        "DenseNet121",
+        "medical",
+        "medical_grade",
+        "pneumonia",
+        "intensive_training",
+        "v2"
+      ],
+      "gradcam_layer": "conv5_block16_2_conv",
+      "is_active": true,
+      "training_type": "intensive",
+      "model_source": "new_folder_intensive_training"
+    },
+    "arthritis_v2": {
+      "model_id": "arthritis_v2",
+      "model_name": "DenseNet121 Arthritis Detection (Intensive v2)",
+      "dataset_type": "arthritis",
+      "version": "2.0",
+      "architecture": "DenseNet121",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Osteoarthritis"
+      ],
+      "classes": [
+        "Normal",
+        "Osteoarthritis"
+      ],
+      "performance_metrics": {
+        "accuracy": 0.9425,
+        "test_accuracy": 0.9425,
+        "precision": 0.9635,
+        "recall": 0.9204
+      },
+      "accuracy": 0.9425,
+      "training_info": {
+        "training_date": "2025-10-06",
+        "dataset": "Dataset/KNEE/Osteoarthritis/train",
+        "performance_level": "Medical Grade",
+        "clinical_readiness": "Ready for Clinical Use",
+        "training_time_minutes": 11.2,
+        "epochs_trained": "12"
+      },
+      "file_path": "arthritis_densenet121_intensive_v2.h5",
+      "file_size": 0.45,
+      "file_hash": "0ffb21fff72c7a89",
+      "created_date": "2025-10-06",
+      "description": "Latest intensive training DenseNet121 model for osteoarthritis detection with 94.2% accuracy",
+      "tags": [
+        "DenseNet121",
+        "medical",
+        "medical_grade",
+        "arthritis",
+        "intensive_training",
+        "v2"
+      ],
+      "gradcam_layer": "conv5_block16_2_conv",
+      "is_active": true,
+      "training_type": "intensive",
+      "model_source": "new_folder_intensive_training"
+    },
+    "osteoporosis_v2": {
+      "model_id": "osteoporosis_v2",
+      "model_name": "DenseNet121 Osteoporosis Detection (Intensive v2)",
+      "dataset_type": "osteoporosis",
+      "version": "2.0",
+      "architecture": "DenseNet121",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Osteoporosis"
+      ],
+      "classes": [
+        "Normal",
+        "Osteoporosis"
+      ],
+      "performance_metrics": {
+        "accuracy": 0.9177,
+        "test_accuracy": 0.9177,
+        "precision": 0.9568,
+        "recall": 0.8806
+      },
+      "accuracy": 0.9177,
+      "training_info": {
+        "training_date": "2025-10-06",
+        "dataset": "Dataset/KNEE/Osteoporosis/train",
+        "performance_level": "Medical Grade",
+        "clinical_readiness": "Ready for Clinical Use",
+        "training_time_minutes": 12.3,
+        "epochs_trained": "15"
+      },
+      "file_path": "osteoporosis_densenet121_intensive_v2.h5",
+      "file_size": 0.45,
+      "file_hash": "6546c41ec86857d4",
+      "created_date": "2025-10-06",
+      "description": "Latest intensive training DenseNet121 model for osteoporosis detection with 91.8% accuracy",
+      "tags": [
+        "DenseNet121",
+        "medical",
+        "medical_grade",
+        "osteoporosis",
+        "intensive_training",
+        "v2"
+      ],
+      "gradcam_layer": "conv5_block16_2_conv",
+      "is_active": true,
+      "training_type": "intensive",
+      "model_source": "new_folder_intensive_training"
+    },
+    "bone_fracture_v2": {
+      "model_id": "bone_fracture_v2",
+      "model_name": "DenseNet121 Bone Fracture Detection (Intensive v2)",
+      "dataset_type": "bone_fracture",
+      "version": "2.0",
+      "architecture": "DenseNet121",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Abnormal"
+      ],
+      "classes": [
+        "Normal",
+        "Abnormal"
+      ],
+      "performance_metrics": {
+        "accuracy": 0.73,
+        "test_accuracy": 0.73,
+        "precision": 0.6966,
+        "recall": 0.815
+      },
+      "accuracy": 0.73,
+      "training_info": {
+        "training_date": "2025-10-06",
+        "dataset": "Dataset/ARM/MURA_Organized/train",
+        "performance_level": "Research Grade",
+        "clinical_readiness": "Research and Development",
+        "training_time_minutes": 5.9,
+        "epochs_trained": "6"
+      },
+      "file_path": "bone_fracture_densenet121_intensive_v2.h5",
+      "file_size": 0.45,
+      "file_hash": "c43edb0c1b58b78d",
+      "created_date": "2025-10-06",
+      "description": "Latest intensive training DenseNet121 model for limb abnormalities/fracture detection with 73.0% accuracy",
+      "tags": [
+        "DenseNet121",
+        "medical",
+        "research_grade",
+        "bone_fracture",
+        "intensive_training",
+        "v2"
+      ],
+      "gradcam_layer": "conv5_block16_2_conv",
+      "is_active": true,
+      "training_type": "intensive",
+      "model_source": "new_folder_intensive_training"
+    },
+    "cardiomegaly_v2": {
+      "model_id": "cardiomegaly_v2",
+      "model_name": "DenseNet121 Cardiomegaly Detection (Intensive v2)",
+      "dataset_type": "cardiomegaly",
+      "version": "2.0",
+      "architecture": "DenseNet121",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "false",
+        "true"
+      ],
+      "classes": [
+        "false",
+        "true"
+      ],
+      "performance_metrics": {
+        "accuracy": 0.6299999952316284,
+        "test_accuracy": 0.6299999952316284,
+        "precision": 0.6815642714500427,
+        "recall": 0.5727699398994446
+      },
+      "accuracy": 0.6299999952316284,
+      "training_info": {
+        "training_date": "2025-10-06",
+        "dataset": "Dataset/CHEST/cardiomelgy/train/train",
+        "performance_level": "Research Grade",
+        "clinical_readiness": "Research and Development",
+        "training_time_minutes": 0,
+        "epochs_trained": 8
+      },
+      "file_path": "cardiomegaly_densenet121_intensive_v2.h5",
+      "file_size": 0.45,
+      "file_hash": "af2b0ac74110f7d7",
+      "created_date": "2025-10-06",
+      "description": "Latest intensive training DenseNet121 model for cardiomegaly detection with 63.0% accuracy",
+      "tags": [
+        "DenseNet121",
+        "medical",
+        "research_grade",
+        "cardiomegaly",
+        "intensive_training",
+        "v2"
+      ],
+      "gradcam_layer": "conv5_block16_2_conv",
+      "is_active": true,
+      "training_type": "intensive",
+      "model_source": "new_folder_intensive_training"
+    },
+    "pneumonia_v2_new": {
+      "model_id": "pneumonia_v2_new",
+      "model_name": "DenseNet121 Pneumonia Detection (New Training v2)",
+      "dataset_type": "pneumonia",
+      "version": "2.0_new",
+      "architecture": "DenseNet121",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "NORMAL",
+        "PNEUMONIA"
+      ],
+      "classes": [
+        "NORMAL",
+        "PNEUMONIA"
+      ],
+      "performance_metrics": {
+        "accuracy": 0.9575,
+        "test_accuracy": 0.9575,
+        "precision": 0.9735,
+        "recall": 0.9388
+      },
+      "accuracy": 0.9575,
+      "training_info": {
+        "training_date": "2025-10-06",
+        "dataset": "Dataset/CHEST/Pneumonia_Organized/train",
+        "performance_level": "Medical Grade",
+        "clinical_readiness": "Ready for Clinical Use",
+        "training_time_minutes": 9.3,
+        "epochs_trained": "11",
+        "configuration": "Intensive",
+        "early_stopping": true
+      },
+      "file_path": "pneumonia_densenet121_new_v2.h5",
+      "file_size": 33.51,
+      "file_hash": "",
+      "created_date": "2025-10-06",
+      "description": "DenseNet121 Pneumonia Detection (New Training v2) with 95.8% accuracy from new training",
+      "tags": [
+        "DenseNet121",
+        "medical",
+        "medical_grade",
+        "pneumonia",
+        "intensive_training",
+        "new_folder",
+        "v2_new"
+      ],
+      "gradcam_layer": "conv5_block16_2_conv",
+      "is_active": false,
+      "training_type": "intensive",
+      "model_source": "new_folder_actual_training",
+      "source_path": "new/densenet121_pneumonia_intensive_models/models/densenet121_pneumonia_intensive_20251006_182328.h5",
+      "integration_date": "2025-10-06T21:08:57.521195"
+    },
+    "arthritis_v2_new": {
+      "model_id": "arthritis_v2_new",
+      "model_name": "DenseNet121 Arthritis Detection (New Training v2)",
+      "dataset_type": "arthritis",
+      "version": "2.0_new",
+      "architecture": "DenseNet121",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Osteoarthritis"
+      ],
+      "classes": [
+        "Normal",
+        "Osteoarthritis"
+      ],
+      "performance_metrics": {
+        "accuracy": 0.9425,
+        "test_accuracy": 0.9425,
+        "precision": 0.9635,
+        "recall": 0.9204
+      },
+      "accuracy": 0.9425,
+      "training_info": {
+        "training_date": "2025-10-06",
+        "dataset": "Dataset/KNEE/Osteoarthritis/train",
+        "performance_level": "Medical Grade",
+        "clinical_readiness": "Ready for Clinical Use",
+        "training_time_minutes": 11.2,
+        "epochs_trained": "12",
+        "configuration": "Intensive",
+        "early_stopping": true
+      },
+      "file_path": "arthritis_densenet121_new_v2.h5",
+      "file_size": 33.51,
+      "file_hash": "",
+      "created_date": "2025-10-06",
+      "description": "DenseNet121 Arthritis Detection (New Training v2) with 94.2% accuracy from new training",
+      "tags": [
+        "DenseNet121",
+        "medical",
+        "medical_grade",
+        "arthritis",
+        "intensive_training",
+        "new_folder",
+        "v2_new"
+      ],
+      "gradcam_layer": "conv5_block16_2_conv",
+      "is_active": false,
+      "training_type": "intensive",
+      "model_source": "new_folder_actual_training",
+      "source_path": "new/densenet121_osteoarthritis_intensive_models/models/densenet121_osteoarthritis_intensive_20251006_185456.h5",
+      "integration_date": "2025-10-06T21:08:57.575196"
+    },
+    "osteoporosis_v2_new": {
+      "model_id": "osteoporosis_v2_new",
+      "model_name": "DenseNet121 Osteoporosis Detection (New Training v2)",
+      "dataset_type": "osteoporosis",
+      "version": "2.0_new",
+      "architecture": "DenseNet121",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Osteoporosis"
+      ],
+      "classes": [
+        "Normal",
+        "Osteoporosis"
+      ],
+      "performance_metrics": {
+        "accuracy": 0.9177,
+        "test_accuracy": 0.9177,
+        "precision": 0.9568,
+        "recall": 0.8806
+      },
+      "accuracy": 0.9177,
+      "training_info": {
+        "training_date": "2025-10-06",
+        "dataset": "Dataset/KNEE/Osteoporosis/train",
+        "performance_level": "Medical Grade",
+        "clinical_readiness": "Ready for Clinical Use",
+        "training_time_minutes": 12.3,
+        "epochs_trained": "15",
+        "configuration": "Intensive",
+        "early_stopping": false
+      },
+      "file_path": "osteoporosis_densenet121_new_v2.h5",
+      "file_size": 33.51,
+      "file_hash": "",
+      "created_date": "2025-10-06",
+      "description": "DenseNet121 Osteoporosis Detection (New Training v2) with 91.8% accuracy from new training",
+      "tags": [
+        "DenseNet121",
+        "medical",
+        "medical_grade",
+        "osteoporosis",
+        "intensive_training",
+        "new_folder",
+        "v2_new"
+      ],
+      "gradcam_layer": "conv5_block16_2_conv",
+      "is_active": false,
+      "training_type": "intensive",
+      "model_source": "new_folder_actual_training",
+      "source_path": "new/densenet121_osteoporosis_intensive_models/models/densenet121_osteoporosis_intensive_20251006_183913.h5",
+      "integration_date": "2025-10-06T21:08:57.633712"
+    },
+    "bone_fracture_v2_new": {
+      "model_id": "bone_fracture_v2_new",
+      "model_name": "DenseNet121 Bone Fracture Detection (New Training v2)",
+      "dataset_type": "bone_fracture",
+      "version": "2.0_new",
+      "architecture": "DenseNet121",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "Normal",
+        "Abnormal"
+      ],
+      "classes": [
+        "Normal",
+        "Abnormal"
+      ],
+      "performance_metrics": {
+        "accuracy": 0.73,
+        "test_accuracy": 0.73,
+        "precision": 0.6966,
+        "recall": 0.815
+      },
+      "accuracy": 0.73,
+      "training_info": {
+        "training_date": "2025-10-06",
+        "dataset": "Dataset/ARM/MURA_Organized/train",
+        "performance_level": "Research Grade",
+        "clinical_readiness": "Research and Development",
+        "training_time_minutes": 5.9,
+        "epochs_trained": "6",
+        "configuration": "Intensive",
+        "early_stopping": true
+      },
+      "file_path": "bone_fracture_densenet121_new_v2.h5",
+      "file_size": 33.51,
+      "file_hash": "",
+      "created_date": "2025-10-06",
+      "description": "DenseNet121 Bone Fracture Detection (New Training v2) with 73.0% accuracy from new training",
+      "tags": [
+        "DenseNet121",
+        "medical",
+        "research_grade",
+        "bone_fracture",
+        "intensive_training",
+        "new_folder",
+        "v2_new"
+      ],
+      "gradcam_layer": "conv5_block16_2_conv",
+      "is_active": false,
+      "training_type": "intensive",
+      "model_source": "new_folder_actual_training",
+      "source_path": "new/densenet121_limbabnormalities_intensive_models/models/densenet121_limbabnormalities_intensive_20251006_190347.h5",
+      "integration_date": "2025-10-06T21:08:57.677722"
+    },
+    "cardiomegaly_v2_new": {
+      "model_id": "cardiomegaly_v2_new",
+      "model_name": "DenseNet121 Cardiomegaly Detection (New Training v2)",
+      "dataset_type": "cardiomegaly",
+      "version": "2.0_new",
+      "architecture": "DenseNet121",
+      "input_shape": [
+        224,
+        224,
+        3
+      ],
+      "num_classes": 2,
+      "class_names": [
+        "false",
+        "true"
+      ],
+      "classes": [
+        "false",
+        "true"
+      ],
+      "performance_metrics": {
+        "accuracy": 0.6299999952316284,
+        "test_accuracy": 0.6299999952316284,
+        "precision": 0.6815642714500427,
+        "recall": 0.5727699398994446
+      },
+      "accuracy": 0.6299999952316284,
+      "training_info": {
+        "training_date": "2025-10-06",
+        "dataset": "Dataset/CHEST/cardiomelgy/train/train",
+        "performance_level": "Research Grade",
+        "clinical_readiness": "Research and Development",
+        "training_time_minutes": 0,
+        "epochs_trained": 8,
+        "configuration": "Intensive",
+        "early_stopping": false
+      },
+      "file_path": "cardiomegaly_densenet121_new_v2.h5",
+      "file_size": 33.51,
+      "file_hash": "",
+      "created_date": "2025-10-06",
+      "description": "DenseNet121 Cardiomegaly Detection (New Training v2) with 63.0% accuracy from new training",
+      "tags": [
+        "DenseNet121",
+        "medical",
+        "research_grade",
+        "cardiomegaly",
+        "intensive_training",
+        "new_folder",
+        "v2_new"
+      ],
+      "gradcam_layer": "conv5_block16_2_conv",
+      "is_active": false,
+      "training_type": "intensive",
+      "model_source": "new_folder_actual_training",
+      "source_path": "new/cardiomegaly_densenet121/cardiomegaly_intensive_20251006_192404/cardiomegaly_densenet121_intensive_20251006_192404.h5",
+      "integration_date": "2025-10-06T21:08:57.731245"
+    }
+  },
+  "active_models": {
+    "bone_fracture": "bone_fracture_v1",
+    "chest_conditions": "pneumonia_v1",
+    "knee_conditions": "arthritis_v1",
+    "pneumonia": "pneumonia_v1",
+    "cardiomegaly": "cardiomegaly_v1",
+    "arthritis": "arthritis_v1",
+    "osteoporosis": "osteoporosis_v1"
+  },
+  "compatibility_notes": {
+    "keras_version_issues": "DenseNet121 v2 models may have compatibility issues",
+    "recommended_models": "Binary v1 models for stable operation",
+    "fixed_paths": "Model file paths corrected to models/ directory",
+    "last_path_fix": "2025-10-06T21:04:09.206205"
+  },
+  "integration_history": [
+    {
+      "date": "2025-10-06T21:08:57.731245",
+      "action": "new_folder_integration",
+      "models_added": [
+        "pneumonia_v2_new",
+        "arthritis_v2_new",
+        "osteoporosis_v2_new",
+        "bone_fracture_v2_new",
+        "cardiomegaly_v2_new"
+      ],
+      "description": "Integrated actual trained models from new/ folder"
+    }
+  ]
+}

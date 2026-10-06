@@ -1,0 +1,38 @@
+{
+  "model_id": "bone_fracture_new_intensive",
+  "model_name": "DenseNet121 Bone Fracture Detection (New Intensive Training)",
+  "dataset_type": "bone_fracture",
+  "version": "3.0_new_intensive",
+  "architecture": "DenseNet121",
+  "input_shape": [
+    224,
+    224,
+    3
+  ],
+  "num_classes": 2,
+  "class_names": [
+    "Normal",
+    "Bone_Fracture"
+  ],
+  "performance_metrics": {
+    "accuracy": 0.73,
+    "test_accuracy": 0.73
+  },
+  "training_info": {
+    "training_date": "2025-10-06",
+    "source": "new_folder_intensive_training",
+    "performance_level": "Research Grade"
+  },
+  "file_path": "bone_fracture/densenet121_limbabnormalities_intensive_20251006_190347.h5",
+  "file_size": 33.51,
+  "created_date": "2025-10-06",
+  "description": "Latest intensive training model from new folder for bone_fracture detection",
+  "tags": [
+    "DenseNet121",
+    "medical",
+    "new_folder",
+    "intensive_training"
+  ],
+  "is_active": true,
+  "source_location": "new_folder_migration"
+}

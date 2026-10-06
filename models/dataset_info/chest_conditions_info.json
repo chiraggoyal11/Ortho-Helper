@@ -1,0 +1,17 @@
+{
+  "classes": [
+    "Cardiomegaly",
+    "Normal",
+    "Pneumonia"
+  ],
+  "num_classes": 3,
+  "target_size": [
+    224,
+    224
+  ],
+  "total_samples": 22816,
+  "train_samples": 15970,
+  "val_samples": 2282,
+  "test_samples": 4564,
+  "dataset_name": "chest_conditions"
+}

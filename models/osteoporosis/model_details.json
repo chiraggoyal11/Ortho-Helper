@@ -1,0 +1,53 @@
+{
+  "model_info": {
+    "name": "DenseNet121_Osteoporosis_Intensive",
+    "architecture": "DenseNet121",
+    "dataset": "Knee",
+    "configuration": "Intensive",
+    "timestamp": "20251006_183913",
+    "total_parameters": 7305281
+  },
+  "performance": {
+    "test_accuracy": 0.9177,
+    "test_precision": 0.9568,
+    "test_recall": 0.8806,
+    "training_time_minutes": 12.3,
+    "epochs_trained": "15",
+    "max_epochs": "15",
+    "early_stopping": false
+  },
+  "training_config": {
+    "name": "Intensive",
+    "epochs": 15,
+    "batch_size": 25,
+    "learning_rate": 0.001,
+    "validation_split": 0.2,
+    "patience": 4
+  },
+  "dataset_info": {
+    "name": "Knee",
+    "path": "Dataset/KNEE/Osteoporosis/train",
+    "classes": [
+      "Normal",
+      "Osteoporosis"
+    ],
+    "type": "medical_imaging",
+    "description": "Knee Osteoporosis Detection"
+  },
+  "gradcam_optimization": {
+    "optimized_for_gradcam": true,
+    "recommended_layer": "conv5_block16_2_conv",
+    "architecture_benefits": [
+      "Dense connectivity preserves gradients",
+      "Excellent for knee osteoporosis detection visualization",
+      "Superior gradient flow for knee osteoporosis detection",
+      "Clear heatmaps for medical interpretation"
+    ]
+  },
+  "medical_classification": {
+    "performance_level": "Excellent",
+    "clinical_readiness": "Medical grade",
+    "deployment_status": "Ready",
+    "primary_use": "Knee Osteoporosis Detection"
+  }
+}

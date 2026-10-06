@@ -1,0 +1,139 @@
+Medical X-ray AI Classification System — Project Summary
+
+1) Overview
+- Purpose: End-to-end Streamlit application for medical X-ray classification with explainability (Grad-CAM), reporting, feedback capture, and role-based access.
+- Modalities/Conditions (binary by default unless noted):
+  • Bone fracture (Fracture vs Normal)
+  • Pneumonia (Pneumonia vs Normal)
+  • Osteoporosis (Osteoporosis vs Normal)
+  • Arthritis (Arthritis vs Normal)
+  • Cardiomegaly (Cardiomegaly vs Normal)
+- Explainability: Grad-CAM heatmaps with adjustable intensity and (for bone) optional fracture-region outlines.
+
+2) Tech Stack
+- Python 3.x, TensorFlow/Keras (TF 2.x APIs), NumPy, OpenCV, PIL/Pillow
+- Streamlit UI, Matplotlib (optional), SciPy (optional for smoothing), Albumentations (optional), pydicom (optional)
+- Persistence/Config: JSON settings and simple JSON user store
+
+3) Key Modules and Responsibilities
+- app.py
+  • Main Streamlit app with modern UI styling (dark-mode aware), navigation, and page logic.
+  • Invokes utils modules for authentication, preprocessing, inference, Grad-CAM, reporting, feedback, settings, usage tracking, and optional data loader/trainer/manager.
+  • Wires Grad-CAM visualization into predictions with a configurable intensity from settings.
+
+- utils/model_inference.py
+  • ModelManager: centralizes model configuration and loading.
+    - Syncs with models/registry/model_registry.json for active model IDs when available.
+    - Fallback “new folder” configs with concrete paths under models/<condition>/*.keras.
+    - Handles knee model class adaptation if the loaded head output differs.
+    - Provides dummy model builders when model files are absent, ensuring the app remains usable.
+  • load_models(): cached bulk loader with robust .keras → .h5 fallbacks and recompile.
+
+- utils/gradcam.py
+  • GradCAM class: robust target-layer discovery including nested base networks (Sequential wrapping Functional backbones like DenseNet/MobileNet).
+  • generate_heatmap(): computes Grad-CAM; multiple fallbacks (attention-based, enhanced synthetic heatmap) when gradients or shapes are unavailable.
+  • create_superimposed_image(): overlays heatmap on original image with chosen colormap and alpha; can draw fracture bounding boxes.
+  • generate_gradcam_heatmap(): single entry-point used by the app; accepts model_type and intensity; returns an overlaid PIL image.
+  • Extra utilities: guided backprop (simplified), multi-layer heatmaps, heatmap statistics/analysis, and saving analysis results.
+
+- utils/image_preprocessing.py
+  • preprocess_image(): resize/normalize, contrast enhance (optional), returns batched NP array.
+  • apply_histogram_equalization(), apply_denoising(): quality improvements.
+  • Albumentations pipelines (medical/light/heavy) or basic augmentation fallback when package is unavailable.
+  • DICOM loading (via pydicom) and quality/metrics utilities.
+
+- utils/authentication.py
+  • Simple JSON-backed user store with demo users: admin/admin2025, doctor/medical123, student/learn123.
+  • Roles: doctor, radiologist, student; permissions vary (students can access Model Information, see results, export reports but limited advanced features).
+  • Session helpers and basic activity logging in session state.
+
+- utils/settings_manager.py
+  • Persistent settings in settings/user_settings.json with backups under settings/backups/.
+  • Defaults include model.confidence_threshold, model.gradcam_intensity, auto_preprocessing, enable_gpu, cache_models, theme, reporting prefs.
+  • Import/export and backup/restore support; applies settings into Streamlit session state.
+
+4) Models and Registry
+- Primary conditions use DenseNet121-based models saved as .keras (with .h5 fallback) under models/<condition>/.
+- Input shape: typically (224, 224, 3) across all configured models.
+- Active models can be declared in models/registry/model_registry.json; ModelManager overrides per dataset_type using this mapping when present.
+- Fallback “new folder” configs (paths as shipped):
+  • Pneumonia: models/pneumonia/densenet121_pneumonia_intensive_20251006_182328.keras
+  • Arthritis: models/arthritis/densenet121_osteoarthritis_intensive_20251006_185456.keras
+  • Osteoporosis: models/osteoporosis/densenet121_osteoporosis_intensive_20251006_183913.keras
+  • Bone fracture: models/bone_fracture/densenet121_limbabnormalities_intensive_20251006_190347.keras
+  • Cardiomegaly: models/cardiomegaly/cardiomegaly_densenet121_intensive_20251006_192404.keras
+- If a model file is missing or incompatible, a simple CNN dummy model is created/saved to keep the app operational.
+
+5) Inference and Data Flow
+- Upload image → optional DICOM handling → preprocessing (resize 224×224, normalize, optional contrast) → model inference.
+- Predictions: binary (sigmoid) by default; knee model can adapt to multi-class when present.
+- Grad-CAM: generate_gradcam_heatmap() called with model, preprocessed array (NHWC), original PIL image, model_type, and intensity.
+- Output: PIL image with heatmap overlay; for bone models, optional fracture boxes drawn.
+
+6) Grad-CAM Details
+- Target Layer Selection:
+  • Scans model or nested base model for last suitable 4D activation/conv layer; skips dropout/flatten/dense/global layers.
+  • Handles Sequential wrappers where the first layer is a Functional backbone.
+- Computation:
+  • Builds a gradient model to obtain (conv activations, model outputs); computes pooled grads and forms normalized heatmap.
+  • Fallbacks: alternative layer search; attention heatmap from input gradients; enhanced synthetic heatmap when necessary.
+- Overlay:
+  • create_superimposed_image() resizes heatmap, applies colormap, alpha blending, optional fracture-region detection and annotations.
+- Tunables:
+  • intensity (alpha) is user-configurable via settings (default 0.4) and passed through all app call sites.
+
+7) Settings and Personalization
+- Default settings include:
+  • model.confidence_threshold=0.5, model.gradcam_intensity=0.4, model.auto_preprocessing=True, model.cache_models=True
+  • system.dark_mode (UI), system.max_image_size_mb, reports.include_gradcam, etc.
+- Settings are user-editable, persisted to disk, versioned via backups, and can be exported/imported.
+
+8) Authentication and Roles
+- Demo accounts (for local testing):
+  • admin / admin2025 (doctor role, admin privileges)
+  • doctor / medical123 (doctor role)
+  • student / learn123 (student role)
+- Students can access “Model Information” and view predictions; advanced features may be restricted by permissions in utils/authentication.py.
+
+9) UI/Navigation Highlights
+- Streamlit page configured with page_icon, wide layout, expanded sidebar.
+- Modern dark-mode-aware CSS with animated cards, metrics, and controls.
+- Navigation includes Model Information and Advanced Features sections (emoji labels); student access verified in recent updates.
+- Grad-CAM intensity is surfaced via settings and used in overlay generation.
+
+10) Operational Notes
+- Loading: Bulk loading uses safe_mode=False for .keras, recompiles models; .h5 fallback is attempted when needed.
+- When models are missing/incompatible, the app creates and saves placeholder CNNs to keep UX functional.
+- Known benign TF warnings are suppressed; Streamlit caching is used for model loads.
+
+11) Known Issues and Edge Cases
+- If models/registry/model_registry.json is malformed or missing, app falls back to baked-in configs; verification scripts should tolerate both cases.
+- Some Unicode/emoji labels in navigation were previously corrupted; now corrected in app navigation strings.
+- If Grad-CAM target layer has insufficient spatial resolution or gradients are None, robust fallbacks produce a viewable heatmap.
+
+12) How to Use (High-Level)
+- Launch the Streamlit app with your Python environment; open the provided local URL in a browser.
+- Log in using a demo account (e.g., student/learn123) to explore; upload an X-ray image.
+- Optionally adjust settings (e.g., Grad-CAM intensity) and re-run analysis.
+- Export reports and review model information/usage statistics where enabled.
+
+13) Files of Interest (non-exhaustive)
+- app.py — Main application UI and wiring
+- utils/gradcam.py — Grad-CAM core and helpers
+- utils/model_inference.py — Model loading/caching, registry sync, inference helpers
+- utils/image_preprocessing.py — Preprocessing, augmentation, DICOM support, quality checks
+- utils/authentication.py — User store, roles/permissions
+- utils/settings_manager.py — Persistent settings with backup/import/export
+
+14) Compliance and Safety
+- User inputs are sanitized; authentication gates certain actions.
+- This app is for research/education; clinical use would require regulatory validation and data governance.
+
+15) Next Steps (Optional Enhancements)
+- Harden model registry parsing and add schema validation with clear error messages.
+- Centralize emoji/label constants to avoid navigation string drift.
+- Add automated tests for Grad-CAM path (signature, target-layer detection across typical backbones).
+- Extend reporting with embedded Grad-CAM analysis summaries for audit trails.
+
+Summary
+This codebase implements a robust, user-friendly X-ray classification system with explainability via Grad-CAM, resilient model loading, configurable preprocessing and visualization, and role-aware UI. The Grad-CAM pipeline supports nested backbones and provides meaningful fallbacks, while settings, authentication, and documentation round out a pragmatic, production-minded design suitable for demos and capstone evaluation.

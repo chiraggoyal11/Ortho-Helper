@@ -1,0 +1,27 @@
+{
+  "condition": "arthritis",
+  "display_name": "\ud83e\uddb5 Knee Arthritis Detection",
+  "model_file": "densenet121_osteoarthritis_intensive_20251006_185456.keras",
+  "architecture": "DenseNet121",
+  "parameters": 7305281,
+  "performance": {
+    "accuracy": 0.9425,
+    "precision": 0.9635,
+    "recall": 0.9204
+  },
+  "grade": "Medical Grade",
+  "input_shape": [
+    224,
+    224,
+    3
+  ],
+  "output_classes": 2,
+  "classes": [
+    "Normal",
+    "Arthritis"
+  ],
+  "gradcam_layer": "conv5_block16_2_conv",
+  "training_date": "2025-10-06",
+  "integrated_date": "2025-10-07 00:53:54",
+  "status": "production_ready"
+}

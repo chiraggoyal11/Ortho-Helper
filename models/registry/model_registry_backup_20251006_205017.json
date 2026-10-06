@@ -1,0 +1,88 @@
+{
+  "last_updated": "2025-10-06T20:43:56.975987",
+  "model_version": "DenseNet121_v2.0",
+  "total_models": 5,
+  "architecture": "DenseNet121",
+  "models": {
+    "bone_fracture": {
+      "file_path": "bone_fracture_model.h5",
+      "accuracy": 0.73,
+      "architecture": "DenseNet121",
+      "classes": [
+        "Normal",
+        "Fracture"
+      ],
+      "dataset": "ARM/MURA_Organized",
+      "training_date": "2025-10-06",
+      "gradcam_layer": "conv5_block16_2_conv",
+      "performance_level": "Research Grade",
+      "clinical_readiness": "Research"
+    },
+    "pneumonia": {
+      "file_path": "pneumonia_binary_model.h5",
+      "accuracy": 0.9575,
+      "architecture": "DenseNet121",
+      "classes": [
+        "Normal",
+        "Pneumonia"
+      ],
+      "dataset": "CHEST/Pneumonia_Organized",
+      "training_date": "2025-10-06",
+      "gradcam_layer": "conv5_block16_2_conv",
+      "performance_level": "Medical Grade",
+      "clinical_readiness": "Ready for Clinical Use"
+    },
+    "cardiomegaly": {
+      "file_path": "cardiomegaly_binary_model.h5",
+      "accuracy": 0.63,
+      "architecture": "DenseNet121",
+      "classes": [
+        "Normal",
+        "Cardiomegaly"
+      ],
+      "dataset": "CHEST/cardiomelgy",
+      "training_date": "2025-10-06",
+      "gradcam_layer": "conv5_block16_2_conv",
+      "performance_level": "Clinical Assistant",
+      "clinical_readiness": "Research and Development"
+    },
+    "arthritis": {
+      "file_path": "arthritis_binary_model.h5",
+      "accuracy": 0.9425,
+      "architecture": "DenseNet121",
+      "classes": [
+        "Normal",
+        "Arthritis"
+      ],
+      "dataset": "KNEE/Osteoarthritis",
+      "training_date": "2025-10-06",
+      "gradcam_layer": "conv5_block16_2_conv",
+      "performance_level": "Medical Grade",
+      "clinical_readiness": "Ready for Clinical Use"
+    },
+    "osteoporosis": {
+      "file_path": "osteoporosis_binary_model.h5",
+      "accuracy": 0.9177,
+      "architecture": "DenseNet121",
+      "classes": [
+        "Normal",
+        "Osteoporosis"
+      ],
+      "dataset": "KNEE/Osteoporosis",
+      "training_date": "2025-10-06",
+      "gradcam_layer": "conv5_block16_2_conv",
+      "performance_level": "Medical Grade",
+      "clinical_readiness": "Ready for Clinical Use"
+    }
+  },
+  "active_models": {
+    "bone_fracture": null,
+    "chest_conditions": null,
+    "knee_conditions": null,
+    "pneumonia": null,
+    "cardiomegaly": null,
+    "arthritis": null,
+    "osteoporosis": null
+  },
+  "last_modified": "2025-10-06T20:45:59.176524"
+}

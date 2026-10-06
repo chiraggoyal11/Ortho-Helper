@@ -1,0 +1,138 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Model files (large)
+*.h5
+*.hdf5
+*.weights
+
+# Large dataset files
+Dataset/
+Dataset.zip
+
+# Logs and temporary files
+*.log
+.tmp/
+temp/
+
+# Generated reports
+*.pdf
+*.html
+xray_report_*.pdf
+xray_report_*.html
+
+# Data files
+usage_data.json
+feedback_data.json
+feedback_export.csv
+
+# Streamlit cache
+.streamlit/
+*.zip
+
+exported_models/
+# Local/private application data
+user_data.json
+*.db
+
+# Personal/local documents
+*.docx
+# Training artifacts and backups
+models/backups/
+models/logs/
+models/migration_backup_*/
+models/*/history_*.json
+models/*/training_history.json
+models/*_history.json
+training_results/
+new/training_results/
+
+# Local/private settings
+settings/user_settings.json
+user_data.json
+*.db
+
+# Local backup copies
+densenet121_original_backup.keras
+utils/gradcam_backup.py
+
+# Training artifacts and backups
+models/backups/
+models/logs/
+models/migration_backup_*/
+models/*/history_*.json
+models/*/training_history.json
+models/*_history.json
+training_results/
+new/training_results/
+
+# Local/private data
+user_data.json
+*.db
+settings/user_settings.json
+
+# Local documents
+*.docx
+
+# Backup copies
+densenet121_original_backup.keras
+utils/gradcam_backup.py
+
+# Duplicate/experimental model collection
+new/
+
+# Model training logs and history
+models/logs/
+models/migration_backup_*/
+models/backups/
+models/*/history_*.json
+models/*/training_history.json
+models/*_history.json
+models/fast_training_results_*.json
+
+# Training visualization artifacts
+models/*/ultra_*_analysis.png
+
+# Broken original DenseNet model
+models/bone_fracture/densenet121_limbabnormalities_intensive_20251006_190347.keras

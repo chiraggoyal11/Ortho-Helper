@@ -1,0 +1,53 @@
+{
+  "model_info": {
+    "name": "DenseNet121_Osteoarthritis_Intensive",
+    "architecture": "DenseNet121",
+    "dataset": "Knee",
+    "configuration": "Intensive",
+    "timestamp": "20251006_185456",
+    "total_parameters": 7305281
+  },
+  "performance": {
+    "test_accuracy": 0.9425,
+    "test_precision": 0.9635,
+    "test_recall": 0.9204,
+    "training_time_minutes": 11.2,
+    "epochs_trained": "12",
+    "max_epochs": "15",
+    "early_stopping": true
+  },
+  "training_config": {
+    "name": "Intensive",
+    "epochs": 15,
+    "batch_size": 25,
+    "learning_rate": 0.001,
+    "validation_split": 0.2,
+    "patience": 4
+  },
+  "dataset_info": {
+    "name": "Knee",
+    "path": "Dataset/KNEE/Osteoarthritis/train",
+    "classes": [
+      "Normal",
+      "Osteoarthritis"
+    ],
+    "type": "medical_imaging",
+    "description": "Knee Osteoarthritis Detection"
+  },
+  "gradcam_optimization": {
+    "optimized_for_gradcam": true,
+    "recommended_layer": "conv5_block16_2_conv",
+    "architecture_benefits": [
+      "Dense connectivity preserves gradients",
+      "Excellent for knee osteoarthritis detection visualization",
+      "Superior gradient flow for knee osteoarthritis detection",
+      "Clear heatmaps for medical interpretation"
+    ]
+  },
+  "medical_classification": {
+    "performance_level": "Excellent",
+    "clinical_readiness": "Medical grade",
+    "deployment_status": "Ready",
+    "primary_use": "Knee Osteoarthritis Detection"
+  }
+}

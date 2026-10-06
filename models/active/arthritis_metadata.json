@@ -1,0 +1,38 @@
+{
+  "model_id": "arthritis_new_intensive",
+  "model_name": "DenseNet121 Arthritis Detection (New Intensive Training)",
+  "dataset_type": "arthritis",
+  "version": "3.0_new_intensive",
+  "architecture": "DenseNet121",
+  "input_shape": [
+    224,
+    224,
+    3
+  ],
+  "num_classes": 2,
+  "class_names": [
+    "Normal",
+    "Arthritis"
+  ],
+  "performance_metrics": {
+    "accuracy": 0.942,
+    "test_accuracy": 0.942
+  },
+  "training_info": {
+    "training_date": "2025-10-06",
+    "source": "new_folder_intensive_training",
+    "performance_level": "Medical Grade"
+  },
+  "file_path": "arthritis/densenet121_osteoarthritis_intensive_20251006_185456.h5",
+  "file_size": 33.51,
+  "created_date": "2025-10-06",
+  "description": "Latest intensive training model from new folder for arthritis detection",
+  "tags": [
+    "DenseNet121",
+    "medical",
+    "new_folder",
+    "intensive_training"
+  ],
+  "is_active": true,
+  "source_location": "new_folder_migration"
+}

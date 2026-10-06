@@ -1,0 +1,62 @@
+{
+    "datasets": {
+        "bone_fracture": {
+            "path": "Dataset/Bone_Fracture_Binary_Classification",
+            "type": "binary",
+            "classes": [
+                "fractured",
+                "normal"
+            ],
+            "description": "X-ray images for bone fracture detection"
+        },
+        "pneumonia": {
+            "path": "Dataset/chest_xray Pneumonia",
+            "type": "binary",
+            "classes": [
+                "pneumonia",
+                "normal"
+            ],
+            "description": "Chest X-ray images for pneumonia detection"
+        },
+        "cardiomegaly": {
+            "path": "Dataset/cardiomelgy",
+            "type": "binary",
+            "classes": [
+                "cardiomegaly",
+                "normal"
+            ],
+            "description": "Chest X-ray images for cardiomegaly detection"
+        },
+        "arthritis": {
+            "path": "Dataset/Osteoarthritis Knee X-ray",
+            "type": "binary",
+            "classes": [
+                "arthritis",
+                "normal"
+            ],
+            "description": "Knee X-ray images for arthritis detection"
+        },
+        "osteoporosis": {
+            "path": "Dataset/Osteoporosis Knee",
+            "type": "binary",
+            "classes": [
+                "osteoporosis",
+                "normal"
+            ],
+            "description": "Knee X-ray images for osteoporosis detection"
+        }
+    },
+    "preprocessing": {
+        "default_size": [
+            224,
+            224
+        ],
+        "normalization": "0-1 scaling",
+        "augmentation_options": [
+            "rotation",
+            "horizontal_flip",
+            "zoom",
+            "brightness"
+        ]
+    }
+}

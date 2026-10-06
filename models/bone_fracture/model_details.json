@@ -1,0 +1,53 @@
+{
+  "model_info": {
+    "name": "DenseNet121_LimbAbnormalities_Intensive",
+    "architecture": "DenseNet121",
+    "dataset": "Limb",
+    "configuration": "Intensive",
+    "timestamp": "20251006_190347",
+    "total_parameters": 7305281
+  },
+  "performance": {
+    "test_accuracy": 0.73,
+    "test_precision": 0.6966,
+    "test_recall": 0.815,
+    "training_time_minutes": 5.9,
+    "epochs_trained": "6",
+    "max_epochs": "15",
+    "early_stopping": true
+  },
+  "training_config": {
+    "name": "Intensive",
+    "epochs": 15,
+    "batch_size": 25,
+    "learning_rate": 0.001,
+    "validation_split": 0.2,
+    "patience": 4
+  },
+  "dataset_info": {
+    "name": "Limb",
+    "path": "Dataset/ARM/MURA_Organized/train",
+    "classes": [
+      "Normal",
+      "Abnormal"
+    ],
+    "type": "medical_imaging",
+    "description": "Limb Abnormalities Detection"
+  },
+  "gradcam_optimization": {
+    "optimized_for_gradcam": true,
+    "recommended_layer": "conv5_block16_2_conv",
+    "architecture_benefits": [
+      "Dense connectivity preserves gradients",
+      "Excellent for limb abnormalities detection visualization",
+      "Superior gradient flow for limb abnormalities detection",
+      "Clear heatmaps for medical interpretation"
+    ]
+  },
+  "medical_classification": {
+    "performance_level": "Moderate",
+    "clinical_readiness": "Research and development",
+    "deployment_status": "Research phase",
+    "primary_use": "Limb Abnormalities Detection"
+  }
+}

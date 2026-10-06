@@ -1,0 +1,45 @@
+{
+  "model_id": "cardiomegaly_fast_20251007_015119",
+  "model_name": "Cardiomegaly Fast Model",
+  "dataset_type": "cardiomegaly",
+  "version": "v1.0",
+  "architecture": "MobileNetV2",
+  "model_type": "Fast",
+  "input_shape": [
+    128,
+    128,
+    3
+  ],
+  "num_classes": 2,
+  "class_names": [
+    "Normal",
+    "Cardiomegaly"
+  ],
+  "classes": [
+    "Normal",
+    "Cardiomegaly"
+  ],
+  "parameters": 1464113,
+  "performance_metrics": {
+    "test_accuracy": 0.6562,
+    "training_time": "~1 minute",
+    "inference_speed": "Fast"
+  },
+  "accuracy": 0.6562,
+  "training_info": {
+    "timestamp": "20251007_015119",
+    "epochs": 3,
+    "batch_size": 64
+  },
+  "file_path": "cardiomegaly\\mobilenet_cardiomegaly_fast_20251007_015119_final.h5",
+  "file_size": 6868024,
+  "created_date": "2025-10-07T01:53:55.318817",
+  "description": "Fast MobileNetV2 model for cardiomegaly detection",
+  "tags": [
+    "Fast",
+    "MobileNetV2",
+    "cardiomegaly",
+    "binary_classification"
+  ],
+  "threshold": 0.5
+}
